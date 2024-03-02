@@ -7,31 +7,31 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title:Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-                "Welcome Back!",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 30
-              ),
-            ),
-            Text(
-                "Fill in your details or continue\n with social media",
-              style: TextStyle(
-                fontSize: 14,
-              ),
-            ),
-          ],
-        ),
-      ),
-      body: Center(
+      body: Container(
+        padding: EdgeInsets.all(16),
          child:
         Column(
-           mainAxisAlignment: MainAxisAlignment.start,
+           crossAxisAlignment: CrossAxisAlignment.start,
            children:[
+             Column(
+               crossAxisAlignment: CrossAxisAlignment.start,
+               children: [
+                 Text(
+                   "Welcome Back!",
+                   style: TextStyle(
+                       fontWeight: FontWeight.bold,
+                       fontSize: 30
+                   ),
+                 ),
+                 Text(
+                   "Fill in your details or continue\n with social media",
+                   style: TextStyle(
+                     fontSize: 14,
+                   ),
+                 ),
+               ],
+             ),
+               SizedBox(height: 20),
                Text("Email Address"),
              SizedBox(height: 20),
              Text("Password"),
