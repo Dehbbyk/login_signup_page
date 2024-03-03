@@ -32,9 +32,20 @@ class LoginPage extends StatelessWidget {
                ],
              ),
                SizedBox(height: 20),
-               Text("Email Address"),
+               TextFormField(
+                 decoration: InputDecoration(
+                   hintText: "Email Address",
+                   prefixIcon: Icon(Icons.email_outlined),
+                 ),
+               ),
              SizedBox(height: 20),
-             Text("Password"),
+             TextFormField(
+               decoration: InputDecoration(
+                 hintText: "Password",
+                 prefixIcon: Icon(Icons.lock_outline),
+                 suffixIcon: Icon(Icons.remove_red_eye)
+               ),
+             ),
              SizedBox(height: 20),
           ElevatedButton(
             onPressed: () {
